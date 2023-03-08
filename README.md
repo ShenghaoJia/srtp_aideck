@@ -80,4 +80,5 @@ make cload
 ## 数据集打包
 我们的项目需要指定格式的数据集，你可以使用我们提供的打包脚本 [package.py](https://github.com/ShenghaoJia/rawGestureDataset/tree/main/dataProcess) ,将代码中的 dataset 替换为你的数据集根目录，将classNum替换为你的数据类别数。运行package.py后会生成data.npz，使用其进行训练即可。
 
-
+## 文件修改
+需要修改一些文件，包括 train/model/train.py，train/model/save_samples.py，train/common.mk，train/Makefile，train/model/nntool_script，train/model.c，以定制自己的神经网络
