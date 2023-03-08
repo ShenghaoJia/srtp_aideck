@@ -3,7 +3,7 @@
 ```shell
 sudo docker run --rm -it -v $PWD:/module/data/ --device /dev/ttyUSB0 --privileged -P bitcraze/aideck /bin/bash -c 'export GAPY_OPENOCD_CABLE=interface/ftdi/olimex-arm-usb-tiny-h.cfg; source /gap_sdk/configs/ai_deck.sh; cd /module/data/;  make clean all run'
 ```
-编译结束之后，会开始输出摄像头的识别结果。快速开始中使用的是
+编译结束之后，会开始输出摄像头的识别结果。快速开始中使用的是01的拳头巴掌识别，你可以在摄像头前做出巴掌和拳头的手势，然后观察输出结果。
 
 
 # 如何训练模型
